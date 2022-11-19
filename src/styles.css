@@ -5,7 +5,7 @@ section {
 }
 
 .hero {
-    background-color: teal;
+    background-color: olive;
     height: 100vh;
     color: beige;
     font-size: 40px;
@@ -58,9 +58,9 @@ p {
 
 .hero-area {
     display: flex;
-    flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-text {
@@ -87,6 +87,14 @@ p {
 .button:active {
     background-color: grey;
     color: darkgray;
+}
+
+.socials {
+    padding-bottom: 280px;
+}
+
+.social {
+    margin: 20px;
 }
 
 .logo {
@@ -147,4 +155,42 @@ hr {
 a {
     text-decoration: none;
     color: beige;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: beige;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: rgb(148, 148, 1);
+        margin: 0px;
+
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(148, 148, 1);
+    }
+
+    .logo {
+        display: none;
+    }
+
 }
